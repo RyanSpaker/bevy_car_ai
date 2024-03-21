@@ -1,0 +1,15 @@
+[package]
+name = "bevy_car_ai"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = { version = "0.13.0", default-features = true, features=["webgpu"]}
+bevy-inspector-egui = "0.23.2"
+winit = "0.29.11"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
